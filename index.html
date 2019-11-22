@@ -2,27 +2,28 @@
 <html>
     
     <head>
+        <link rel = 'stylesheet' href = 'FirstForm.css'>
     </head>
-    <body style = 'background-color: #030303; color: #ea7200; text-align: center'>
+    <body>
         
         <section>
             <h1>A Simple Button In Three Acts</h1>
-            <ul style = 'display: flex; flex-flow: wrap column; align-items: center;'>Acts:
+            <ul>Acts:
                 <li>Initial</li>
                 <li>Secondary</li>
                 <li>Third</li>
             </ul>
             <p id = 'vis' style = 'padding-top: 5%; font-size: 30px'><strong>Initial</strong> <em>Act</em></p>
-            <input type = 'button' id = 'a' value = 'Click' style = 'background-color: #0d0d0d; color: #ea7200;'>    
+            <input type = 'button' id = 'a' value = 'Click'>    
         </section>
-        <div style = 'padding-top: 5%'>
+        <div id = 'ylwMoon'>
             <a href = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7fjKw_q87mLXob3kf7PS_X0LkCffd5EhSs6cQHp0lR-sBfnkRaA&s' target = '_blank'>
                 <img src = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7fjKw_q87mLXob3kf7PS_X0LkCffd5EhSs6cQHp0lR-sBfnkRaA&s'>
             </a>
         </div>
         <pre>What      is      this</pre>
-        <code>const square = num => { return num** }</code>
-        <div style = 'padding-top: 5%; display: flex; justify-content: center;'>
+        <code>const square = num => { return num** }</code><br>
+        <div id = 'tbl'>
             <table>
                 <tr>
                     <th>AB</th>
@@ -35,24 +36,77 @@
                     <td>d</td>     
                 </tr>
             </table> 
-        </div>
+        </div><br>
         
-        <form >
-            <div >
+        <form>
+            <div>
                 <label for = 'date'>Date:</label>
-                <input type = 'date' id = 'date' style = 'background-color: #000000; color: #ea7200; border-color: #ea7200;'>
+                <input type = 'date' id = 'date'>
             </div>
             <div>
                 <label for = 'num'>Number:</label>
-                <input type = 'number' id = 'num' max = 128000 value = 127990 style = 'background-color: #000000; color: #ea7200; border-color: #ea7200;'>
+                <input type = 'number' id = 'num' max = 128000 value = 127990>
             </div>
             <div>
                 <label for = 'address'>URL:</label>
-                <input type = 'url' id = 'address' style = 'background-color: #000000; color: #ea7200; border-color: #ea7200;' disabled>
+                <input type = 'url' id = 'address' disabled>
             </div>
             <div>
                 <label for = 'code'>Password:</label>
-                <input type = 'password' id = 'code' minlength = 8 style = 'background-color: #000000; color: #ea7200; border-color: #ea7200;' required>
+                <input type = 'password' id = 'code' minlength = 8 required>
+            </div><br>
+            <div class = 'q'>Which of These States Have You Visited?
+                <div>
+                    <input type = 'checkbox' name = 'checks' id = 'check1' value = 'Colorado' checked>
+                    <label for = 'check1'>Colorado</label>
+                </div>
+                <div>
+                    <input type = 'checkbox' name = 'checks' id = 'check2' value = 'California'>
+                    <label for = 'check2'>California</label>
+                </div>
+                <div>
+                    <input type = 'checkbox' name = 'checks' id = 'check3' value = 'New York'>
+                    <label for = 'check3'>New York</label>
+                </div>
+                <div>
+                    <input type = 'checkbox' name = 'checks' id = 'check4' value = 'Washington'>
+                    <label for = 'check4'>Washington</label>
+                </div>
+                <div>
+                    <input type = 'checkbox' name = 'checks' id = 'check5' value = 'Florida'>
+                    <label for = 'check5'>Florida</label>
+                </div>
+            </div><br>
+            <div class = 'q'>What Age Group Are You a Part Of?
+                <div>
+                    <input type = 'radio' name = 'radios' id = 'radio1' value = 1 checked>
+                    <label for = 'radio1'>0 - 17 years old</label>   
+                </div>
+                <div>
+                    <input type = 'radio' name = 'radios' id = 'radio2' value = 2>
+                    <label for = 'radio2'>18 - 25 years old</label> 
+                </div>
+                <div>
+                    <input type = 'radio' name = 'radios' id = 'radio3' value = 3>
+                    <label for = 'radio3'>26 - 39 years old</label> 
+                </div>
+                <div>
+                    <input type = 'radio' name = 'radios' id = 'radio4' value = 4>
+                    <label for = 'radio4'>40 - 55 years old</label> 
+                </div>
+                <div>
+                    <input type = 'radio' name = 'radios' id = 'radio5' value = 5>
+                    <label for = 'radio5'>56 - 70 years old</label> 
+                </div>
+                <div>
+                    <input type = 'radio' name = 'radios' id = 'radio6' value = 6>
+                    <label for = 'radio6'>71+ years old</label> 
+                </div>
+                
+                
+                
+                
+                
             </div>
         </form>
 

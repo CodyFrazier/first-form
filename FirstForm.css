@@ -1,0 +1,33 @@
+body{
+	background-color: #030303;
+	color: #ea7200;
+	text-align: center;
+}
+ul{
+	display: flex;
+	flex-flow: wrap column;
+	align-items: center;
+}
+input{
+	background-color: #000000;
+	color: #ea7200;
+	border-color: #ea7200;
+}
+#vis{
+	padding-top: 5%;
+	font-size: 30px;
+}
+#ylwMoon{
+	padding-top: 5%;
+}
+#tbl{
+	padding-top: 5%;
+	display: flex;
+	justify-content: center;
+}
+.q{
+	display: flex;
+	flex-flow: wrap column;
+	align-items: center;
+}
+
