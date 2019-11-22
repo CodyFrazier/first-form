@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
-    <h1>A Simple Button In Three Acts</h1>
     
     <head>
     </head>
     <body style = 'background-color: #030303; color: #ea7200; text-align: center'>
+        
         <section>
+            <h1>A Simple Button In Three Acts</h1>
             <ul style = 'display: flex; flex-flow: wrap column; align-items: center;'>Acts:
                 <li>Initial</li>
                 <li>Secondary</li>
@@ -14,7 +15,6 @@
             <p id = 'vis' style = 'padding-top: 5%; font-size: 30px'><strong>Initial</strong> <em>Act</em></p>
             <input type = 'button' id = 'a' value = 'Click' style = 'background-color: #0d0d0d; color: #ea7200;'>    
         </section>
-        
         <div style = 'padding-top: 5%'>
             <a href = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7fjKw_q87mLXob3kf7PS_X0LkCffd5EhSs6cQHp0lR-sBfnkRaA&s' target = '_blank'>
                 <img src = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7fjKw_q87mLXob3kf7PS_X0LkCffd5EhSs6cQHp0lR-sBfnkRaA&s'>
@@ -27,18 +27,35 @@
                 <tr>
                     <th>AB</th>
                     <td>a</td>
-                    <td>b</td>  
-                    
+                    <td>b</td>   
                 </tr>
                 <tr>
                     <th>CD</th>
                     <td>c</td>
-                    <td>d</td>    
-                    
+                    <td>d</td>     
                 </tr>
             </table> 
         </div>
         
+        <form >
+            <div >
+                <label for = 'date'>Date:</label>
+                <input type = 'date' id = 'date' style = 'background-color: #000000; color: #ea7200; border-color: #ea7200;'>
+            </div>
+            <div>
+                <label for = 'num'>Number:</label>
+                <input type = 'number' id = 'num' max = 128000 value = 127990 style = 'background-color: #000000; color: #ea7200; border-color: #ea7200;'>
+            </div>
+            <div>
+                <label for = 'address'>URL:</label>
+                <input type = 'url' id = 'address' style = 'background-color: #000000; color: #ea7200; border-color: #ea7200;' disabled>
+            </div>
+            <div>
+                <label for = 'code'>Password:</label>
+                <input type = 'password' id = 'code' minlength = 8 style = 'background-color: #000000; color: #ea7200; border-color: #ea7200;' required>
+            </div>
+        </form>
+
         <script>
             const vis = document.getElementById('vis');
             document.getElementById('a').addEventListener('click', () => {
