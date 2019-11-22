@@ -4,12 +4,13 @@
     </head>
     <body style = 'background-color: #030303; color: #ea7200'>
         <p id = 'vis'>Initial Value</p>
-        <input type = 'button' id = 'a' value = 'Click'>
+        <input type = 'button' id = 'a' value = 'Click' style = 'background-color: #0d0d0d; color: #ea7200;'>
         <script>
             const vis = document.getElementById('vis');
             document.getElementById('a').addEventListener('click', () => {
                 vis.innerHTML === 'Initial Value' ? vis.innerHTML = 'Secondary Value' 
-                : vis.innerHTML = 'Initial Value';
+                : vis.innerHTML === 'Secondary Value' ? vis.innerHTML = 'Third Value' 
+                :vis.innerHTML = 'Initial Value';
             });
         </script>
     </body>
