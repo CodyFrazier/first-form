@@ -1,11 +1,23 @@
 <!DOCTYPE html>
 <html>
     <h1>A Simple Button In Three Acts</h1>
+    <ul style = 'display: flex; flex-flow: wrap column; align-items: center;'>Acts:
+        <li>Initial</li>
+        <li>Secondary</li>
+        <li>Third</li>
+    </ul>
     <head>
     </head>
     <body style = 'background-color: #030303; color: #ea7200; text-align: center'>
-        <p id = 'vis' style = 'padding-top: 20%; font-size: 30px'>Initial Act</p>
+        <p id = 'vis' style = 'padding-top: 5%; font-size: 30px'><strong>Initial</strong> <emphasis>Act</emphasis></p>
         <input type = 'button' id = 'a' value = 'Click' style = 'background-color: #0d0d0d; color: #ea7200;'>
+        <div style = 'padding-top: 5%'>
+            <a href = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7fjKw_q87mLXob3kf7PS_X0LkCffd5EhSs6cQHp0lR-sBfnkRaA&s' target = '_blank'>
+                <img src = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7fjKw_q87mLXob3kf7PS_X0LkCffd5EhSs6cQHp0lR-sBfnkRaA&s'>
+            </a>
+            
+        </div>
+        
         <script>
             const vis = document.getElementById('vis');
             document.getElementById('a').addEventListener('click', () => {
